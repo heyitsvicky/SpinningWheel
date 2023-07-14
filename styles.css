@@ -23,8 +23,8 @@ h1, .intro{
     margin-top: -65px;
 }
 .box{
-    width: 500px;
-    height: 575px;
+    width: 400px;
+    height: 490px;
     background-color:rgb(101, 106, 135);
     border-radius: 10px;
     position: absolute;
@@ -33,8 +33,8 @@ h1, .intro{
     border: 2px solid black;
 }
 .outline{
-    width: 500px;
-    height: 575px;
+    width: 400px;
+    height: 490px;
     margin: 0 auto;
     box-shadow: 0 0 70px 10px rgb(141, 146, 171);
     border-radius: 10px;
@@ -42,21 +42,21 @@ h1, .intro{
 }
 .spin-button{
     border-radius: 5px;
-    width: 275px;
-    height: 50px; 
+    width: 250px;
+    height: 30px; 
     position: absolute;
     bottom: 20px;
     border: 2px solid black;
     text-align: center;
     background-color: white;
-    padding-top: 10px;
-    font-size: 30px;
+    padding-top: 5px;
+    font-size: 25px;
     font-family: 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
 }
 .container .circle{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     top: 30px;
     border-radius: 50%;
     background-color: black;
@@ -85,9 +85,9 @@ h1, .intro{
 }
 .pointer{
     width: 0;
-    height: 418px;
+    height: 365px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 60px solid black;
+    border-bottom: 45px solid black;
     z-index: 2;
 }
