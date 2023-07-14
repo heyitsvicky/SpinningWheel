@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en"> 
+    <head>
+        <meta charset="UTF-8">
+        <link rel= "stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="text">
+            <h1>Spin The Wheel</h1>
+            <p class="intro">It's self explanatory, spin the wheel and get a randomized result, woohooo!</p>
+        </div>
+        <div class="container">
+            <div class="outline">
+                <div class="box">
+                    <div class="spin-button">SPIN</div>
+                    <div class="pointer"></div>
+                    <div class="circle">
+                        <div class="section" style="--i:1; --clr: rgb(175, 145, 204)"><span>Item 1</span></div>
+                        <div class="section" style="--i:2; --clr: rgb(175, 145, 204)"><span>Item 2</span></div>
+                        <div class="section" style="--i:3; --clr: rgb(175, 145, 204)"><span>Item 3</span></div>
+                        <div class="section" style="--i:4; --clr: rgb(175, 145, 204)"><span>Item 4</span></div>
+                        <div class="section" style="--i:5; --clr: rgb(175, 145, 204)"><span>Item 5</span></div>
+                        <div class="section" style="--i:6; --clr: rgb(175, 145, 204)"><span>Item 6</span></div>
+                        <div class="section" style="--i:7; --clr: rgb(175, 145, 204)"><span>Item 7</span></div>
+                        <div class="section" style="--i:8; --clr: rgb(175, 145, 204)"><span>Item 8</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let circle = document.querySelector('.circle');
+            let spinBtn = document.querySelector('.spin-button');
+            let value = Math.ceil(Math.random() * 3600);
+
+            spinBtn.onclick = function(){
+                circle.style.transform = "rotate(" + value + "deg)";
+                value += Math.ceil(Math.random() * 3600);
+            }
+        </script>
+    </body>
+</html>
